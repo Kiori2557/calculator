@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 400px;
+  height: 600px;
+  border: 1px rebeccapurple solid;
+}
+.display {
+  height: 25%;
+  border: 1px red solid;
+}
+.buttons {
+  height: 75%;
+  display: flex;
+  border: 1px black solid;
+}
+.numbers {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px yellow solid; */
+}
+.operators {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  /* border: 1px green solid; */
+}
+.numBtn {
+  flex-grow: 1;
+}
+.numRow {
+  display: flex;
+  /* border: 1px magenta dotted; */
+  flex-grow: 1;
+}
+.operatorBtn {
+  flex-grow: 1;
+}
