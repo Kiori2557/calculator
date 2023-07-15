@@ -9,19 +9,29 @@ body {
   align-items: center;
   height: 100vh;
 }
+.input {
+  /* border: 1px rgb(64, 221, 163) solid; */
+  height: 50%;
+}
+.result {
+  /* border: 1px yellow solid; */
+  height: 50%;
+}
 .container {
   width: 400px;
   height: 600px;
-  border: 1px rebeccapurple solid;
+  border: 5px rgb(255, 221, 180) solid;
+  border-radius: 1em;
 }
 .display {
   height: 25%;
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
-.buttons {
+.buttonsContainer {
   height: 75%;
   display: flex;
-  border: 1px black solid;
+  background-color: bisque;
+  /* border: 1px black solid; */
 }
 .numbers {
   width: 80%;
@@ -45,4 +55,25 @@ body {
 }
 .operatorBtn {
   flex-grow: 1;
+}
+
+button {
+  border: 0px inset #333;
+  border-radius: 0.7em;
+  background-color: bisque;
+  outline: 3px solid #333;
+  outline-offset: -10px;
+  transition: 200ms;
+  cursor: pointer;
+}
+button:hover {
+  outline-offset: -5px;
+  outline-color: #111111;
+  background-color: rgb(160, 199, 244);
+  font-size: larger;
+  font-weight: bolder;
+}
+button:active {
+  transform: scale(0.9);
+  background-color: rgb(160, 161, 244);
 }

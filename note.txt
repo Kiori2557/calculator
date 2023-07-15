@@ -1,3 +1,5 @@
 Javascript
 -functions for operator( Add, Subtract, Multiply, Divide)
 -function that call the corresponding operator functions when press ( = or another operator again)
+-store the pressed number to variable num1 until an operator btn is pressed then store number in variable num2 
+-operate on the 2 num variable after operator = is clicked
