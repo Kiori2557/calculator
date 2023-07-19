@@ -58,7 +58,7 @@ body {
 }
 
 button {
-  border: 0px inset #333;
+  border: 0;
   border-radius: 0.7em;
   background-color: bisque;
   outline: 3px solid #333;
@@ -67,7 +67,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  outline-offset: -5px;
+  outline-offset: -3px;
   outline-color: #111111;
   background-color: rgb(160, 199, 244);
   font-size: larger;
