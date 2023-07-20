@@ -70,32 +70,15 @@ operatorBtns.forEach((operatorBtn) => {
       console.log(num1);
     }
     console.log(arrayOp);
-
-    // arrayOp.push(operatorBtn.value);
-    // console.log(array.length);
-    // if (array.length > 1) {
-    //   operate();
-    //   num1 = parseFloat(result.textContent);
-    //   num2 = null;
-    //   b = "";
-    //   array = [num1];
-    //   arrayOp.splice(0, 1);
-    //   console.log(array);
-    // }
-    // if (operatorBtn.value == "=" && inputNum.textContent) {
-    //   // inputNum.textContent = "";
-    //   a = "";
-    //   b = "";
-    //   num1 = null;
-    //   num2 = null;
-    //   array = [];
-    //   arrayOp = [];
-    //   numBtns.forEach((numBtn) => {
-    //     numBtn.addEventListener("click", () => {
-    //       result.textContent = "";
-    //     });
-    //   });
-    // }
+    if (operatorBtn.value == "=") {
+      a = "0";
+      b = "";
+      num1 = null;
+      num2 = null;
+      array = [];
+      arrayOp = [];
+      inputNum.textContent = ``;
+    }
     if (operatorBtn.value == "clear") {
       isLastInputOperator = false;
       a = "0";
