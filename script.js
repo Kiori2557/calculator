@@ -71,13 +71,15 @@ operatorBtns.forEach((operatorBtn) => {
     }
     console.log(arrayOp);
     if (operatorBtn.value == "=") {
-      a = "0";
+      a = result.textContent;
       b = "";
       num1 = null;
       num2 = null;
       array = [];
       arrayOp = [];
-      inputNum.textContent = ``;
+      inputNum.textContent = result.textContent;
+      result.textContent = "";
+      isLastInputOperator = false;
     }
     if (operatorBtn.value == "clear") {
       isLastInputOperator = false;
