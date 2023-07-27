@@ -25,11 +25,18 @@ let array = [];
 let a = "0";
 let b = "";
 let isLastInputOperator = false;
+let inputMemberArray = [];
 
 // if the input is number store it in variable num1.if num1 already exist then store the input in num2 and call operate function
 numBtns.forEach((numBtn) => {
   numBtn.addEventListener("click", () => {
+    inputMemberArray = inputNum.textContent.split(/([^0-9.])/g);
     isLastInputOperator = false;
+    if (
+      numBtn.value == "." &&
+      inputMemberArray[inputMemberArray.length - 1].includes(".")
+    )
+      return;
     inputNum.textContent += numBtn.value;
     if (!num1) {
       a += numBtn.value;
