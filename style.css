@@ -27,7 +27,7 @@ body {
   width: 400px;
   height: 600px;
   border: 8px rgb(124, 110, 93) solid;
-  border-radius: 1em;
+  border-radius: 10px;
 }
 .display {
   height: 25%;
@@ -38,14 +38,13 @@ body {
   height: 75%;
   display: flex;
   background-color: bisque;
-  border-bottom-right-radius: 1em;
-  border-bottom-left-radius: 1em;
-  /* border: 1px black solid; */
 }
 .numbers {
   width: 80%;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  margin: 0.5rem 0.5rem;
   /* border: 1px yellow solid; */
 }
 .operators {
@@ -53,36 +52,37 @@ body {
   flex-direction: column;
   width: 20%;
   /* border: 1px green solid; */
+  gap: 10px;
+  margin: 0.5rem 0.5rem 0.5rem 0;
 }
 .numBtn {
-  flex-grow: 1;
+  width: 33%;
 }
 .numRow {
   display: flex;
   /* border: 1px magenta dotted; */
   flex-grow: 1;
+  gap: 10px;
 }
 .operatorBtn {
   flex-grow: 1;
+  border-radius: 50%;
 }
 
 button {
   border: 0;
   border-radius: 0.7em;
   background-color: bisque;
-  outline: 3px solid #333;
-  outline-offset: -10px;
-  transition: 200ms;
+  border: 3px solid #333;
+  /* outline-offset: -10px; */
   cursor: pointer;
 }
 button:hover {
-  outline-offset: -3px;
-  outline-color: #111111;
-  background-color: rgb(160, 199, 244);
-  font-size: larger;
-  font-weight: bolder;
+  outline-color: #140c0c;
+  background-color: rgb(161, 134, 102);
+  color: rgb(209, 208, 208);
 }
 button:active {
-  transform: scale(0.9);
-  background-color: rgb(160, 161, 244);
+  background-color: bisque;
+  color: black;
 }
