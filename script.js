@@ -17,6 +17,7 @@ const btns = document.querySelectorAll("button");
 const display = document.querySelector(".display");
 const inputNum = document.querySelector(".input");
 const result = document.querySelector(".result");
+const deleteBtn = document.querySelector(".del");
 let arrayOp = [];
 let num1;
 let num2;
@@ -31,6 +32,7 @@ let inputMemberArray = [];
 numBtns.forEach((numBtn) => {
   numBtn.addEventListener("click", () => {
     inputMemberArray = inputNum.textContent.split(/([^0-9.])/g);
+    // console.log(inputMemberArray);
     isLastInputOperator = false;
     if (
       numBtn.value == "." &&
@@ -43,7 +45,6 @@ numBtns.forEach((numBtn) => {
     } else if (num1) {
       b += numBtn.value;
       num2 = b;
-      console.log(num2);
       array[1] = num2;
       operate();
     }
@@ -100,6 +101,14 @@ operatorBtns.forEach((operatorBtn) => {
       inputNum.textContent = "";
     }
   });
+});
+
+deleteBtn.addEventListener("click", () => {
+  let array = inputNum.textContent.split("");
+  inputNum.textContent = inputNum.textContent.slice(
+    0,
+    inputNum.textContent.lastIndexOf(array[array.length - 1])
+  );
 });
 
 function operate() {
